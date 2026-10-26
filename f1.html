@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+
+
+<style>
+    body {
+        background-color: #eaf0f8;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: #243b55;
+    }
+
+    form {
+        background-color: white;
+        width: 400px;
+        margin: 20px auto;
+        padding: 25px;
+        border: 2px solid #b8cce4;
+        border-radius: 10px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #b8cce4;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #2878d0;
+    }
+
+    input[type="radio"] {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #2878d0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #1c5fa8;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<h1>Formularz</h1>
+
+<form action="formularz.html" method="GET">
+
+
+<label for="username">Imię:</label>
+<input id="username" name="username" type="text">
+
+<label for="surname">Nazwisko:</label>
+<input id="surname" name="surname" type="text">
+
+<label for="street">Ulica:</label>
+<input id="street" name="street" type="text">
+
+<label for="city">Miasto:</label>
+<input id="city" name="city" type="text">
+
+<label for="password">Hasło:</label>
+<input id="password" name="password" type="password">
+
+<label for="birthday">Data urodzenia:</label>
+<input type="date" id="birthday" name="birthday">
+
+<label for="phone">Nr telefonu:</label>
+<input type="tel" name="phone" id="phone">
+
+<label for="province">Województwo:</label>
+<select id="province" name="province" required>
+    <option value="" disabled selected hidden>Wybierz województwo</option>
+    <option value="mazowieckie">mazowieckie</option>
+    <option value="łódzkie">łódzkie</option>
+    <option value="wielkopolskie">wielkopolskie</option>
+    <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+</select>
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email">
+
+<label>Prawo jazdy:</label><br>
+
+<input value="tak" type="radio" id="dlicence_tak" name="dlicence">
+<label for="dlicence_tak">Tak</label>
+
+<input value="nie" type="radio" id="dlicence_nie" name="dlicence">
+<label for="dlicence_nie">Nie</label>
+
+<br>
+
+<label for="comment">Uwagi:</label>
+<textarea id="comment" name="comment" rows="5"></textarea>
+
+<button type="submit">Wyślij formularz</button>
+
+
+</form>
+
+</body>
+</html>

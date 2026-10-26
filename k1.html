@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tekst w kolumnach</title>
+
+
+<style>
+    .row {
+        width: 100%;
+        display: flex;
+    }
+
+    p {
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .polowa {
+        width: 50%;
+    }
+
+    .cala {
+        width: 100%;
+    }
+
+    .jedna-czwarta {
+        width: 25%;
+    }
+</style>
+
+
+</head>
+<body>
+
+
+<!-- 3 rzędy po 50% -->
+<div class="row">
+    <p class="polowa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet.</p>
+    <p class="polowa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet.</p>
+</div>
+
+<div class="row">
+    <p class="polowa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet.</p>
+    <p class="polowa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet.</p>
+</div>
+
+<div class="row">
+    <p class="polowa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet.</p>
+    <p class="polowa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet.</p>
+</div>
+
+<!-- 4 rzędy po 100% -->
+<div class="row">
+    <p class="cala">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet, blandit eleifend dolor.</p>
+</div>
+
+<div class="row">
+    <p class="cala">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet, blandit eleifend dolor.</p>
+</div>
+
+<div class="row">
+    <p class="cala">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet, blandit eleifend dolor.</p>
+</div>
+
+<div class="row">
+    <p class="cala">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus odio, scelerisque in odio sit amet, blandit eleifend dolor.</p>
+</div>
+
+<!-- 2 rzędy po 25% -->
+<div class="row">
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+</div>
+
+<div class="row">
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+</div>
+
+<!-- 2 rzędy: 50%, 25%, 25% -->
+<div class="row">
+    <p class="polowa">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+</div>
+
+<div class="row">
+    <p class="polowa">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+    <p class="jedna-czwarta">Lorem ipsum dolor sit amet.</p>
+</div>
+
+
+</body>
+</html>
