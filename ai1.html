@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+
+```
+<style>
+    body {
+        background-color: lightblue;
+        font-family: Arial;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        background-color: white;
+        width: 350px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+        width: auto;
+    }
+
+    input[type="submit"] {
+        background-color: steelblue;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+```
+
+</head>
+<body>
+
+```
+<h1>Formularz kontaktowy</h1>
+
+<form>
+    <label>Imię:</label>
+    <input type="text" name="imie">
+
+    <label>Nazwisko:</label>
+    <input type="text" name="nazwisko">
+
+    <label>E-mail:</label>
+    <input type="email" name="email">
+
+    <label>Hasło:</label>
+    <input type="password" name="haslo">
+
+    <label>Wybierz płeć:</label><br>
+    <input type="radio" name="plec" value="kobieta"> Kobieta
+    <input type="radio" name="plec" value="mezczyzna"> Mężczyzna
+
+    <br><br>
+
+    <label>Województwo:</label>
+    <select name="wojewodztwo">
+        <option>Mazowieckie</option>
+        <option>Pomorskie</option>
+        <option>Małopolskie</option>
+        <option>Śląskie</option>
+    </select>
+
+    <label>Wiadomość:</label>
+    <textarea name="wiadomosc"></textarea>
+
+    <input type="submit" value="Wyślij">
+</form>
+```
+
+</body>
+</html>
